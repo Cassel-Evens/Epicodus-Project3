@@ -1,5 +1,6 @@
 <!-- Buisness Logic  -->
 Describe: Beep Boop:
+
 Test: "Should run throught the array and return numbers up to imputted number;
 Code: const text = ("2");
 let number = parseInt(text);
