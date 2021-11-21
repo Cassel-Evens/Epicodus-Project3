@@ -17,6 +17,6 @@ Test: Put for input logic into an array.
 
 Code:
 
-Expected Output: alert [1, 2 ,3 , 4]
-=======
->>>>>>> 023173e24420a3044bf9bdb6f346214e09d9ee48
+Expected Output: alert 1,2,3,4,5
+
+* _https://cassel-evens.github.io/Epicodus-Project3/_ 
