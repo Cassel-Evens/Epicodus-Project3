@@ -22,3 +22,14 @@ function numberReplacer(number) {
 //push index counting up by 1 up to users inputted number into an array
 /*Then run if/if else statements that if a number is found in the [i] to replace
 it with a certain phrase or word */
+
+//UI Logic 
+
+$(document).ready(function(){
+  $("form#your-number").submit(function(event){
+    event.preventDefault();
+    const passage = $("#text-passage").val();
+    const yourNumber = numberReplacer(passage);
+    $("#your-number-phrase").html(yourNumber);
+  });
+});
