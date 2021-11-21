@@ -11,9 +11,12 @@ for (let i = 1; i <= number; i +=1) {
 } 
 
 Expected Output: (1,2)
+<<<<<<< HEAD
 
 Test: Put for input logic into an array.
 
 Code:
 
 Expected Output: alert [1, 2 ,3 , 4]
+=======
+>>>>>>> 023173e24420a3044bf9bdb6f346214e09d9ee48
