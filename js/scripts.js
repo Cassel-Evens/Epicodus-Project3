@@ -1,21 +1,24 @@
 // Buisness Logic 
 
-/* Run a for.Each loop to run through the index of an array until it 
+/* Run a for.Each/For loop to run through the index of an array until it 
 until it reaches user imputted value. Then with if statements it will
 match corresponding variables to strings and display those in an array
 output */
 
-const text = ("9");
-let number = parseInt(text);
-console.log(number);
-for (let i = 1; i <= number; i +=1) {
-  console.log(i);
-}  
-// function numberReplacer(text) {
-//   let numbersArray = [0,1,2,3,4,5];
-//   numbersArray.forEach(function(number) {
-//     if (text.match(number)) {
-      
-//     }
-//   })
-// }
+// const text = ("2");
+function numberReplacer(number) {
+  // const numberArray = text.split (" ")
+  // let number = parseInt(text);
+  // console.log(number);
+  const array = [number];
+  let numberArray = [];
+  for (let i = 1; i <= number; i +=1) {
+    console.log(i);
+    numberArray.push(array);
+    console.log(numberArray);
+  } 
+}
+
+//push index counting up by 1 up to users inputted number into an array
+/*Then run if/if else statements that if a number is found in the [i] to replace
+it with a certain phrase or word */
