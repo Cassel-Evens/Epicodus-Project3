@@ -22,3 +22,12 @@ Code: let robogersArray = [];
     }
 
 Expected Output: alert [1, 2 ,3 , 4]
+
+Test: If 1 is detected in the array replace and show "Let's be neighbors!"
+
+Code: let robogersArrayMod = robogersArray.map(function(num) {
+      let digit = num.toString().split("");
+      if (digit.includes("1")) {
+        return "\"Let's be neighbors!"
+      }
+Expected Output: ["lets be neighbors!, ,]

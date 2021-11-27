@@ -4,29 +4,22 @@
 until it reaches user imputted value. Then with if statements it will
 match corresponding variables to strings and display those in an array
 output */
-
-
-function robogers(number) {
+let robogers = function(number){
   if (isNaN(number)) {
-    return "I don't think that's a number"
+    return ("I do not believe this is a number my dear neighbor!")
   } else {
-      let robogersArray = [];
-      for (let i = 1; i <= number; i +=1) {
-        robogersArray.push(i);
+    let robogersArray = [];
+    for (let i = 0; i <= number; i++) {
+      robogersArray.push(i);
+    };
+    let robogersArrayMod = robogersArray.map(function(num) {
+      let digit = num.toString().split("");
+      if (digit.includes("1")) {
+        return "\"Let's be neighbors!"
       }
-    }
-  }
-//push index counting up by 1 up to users inputted number into an array
-/*Then run if/if else statements that if a number is found in the [i] to replace
-it with a certain phrase or word */
+      console.log(robogersArray);
+    });
+    return robogersArrayMod.join(" ");
+  };
+};
 
-//UI Logic 
-
-$(document).ready(function(){
-  $("form#your-number").submit(function(event){
-    event.preventDefault();
-    const passage = $("#text-passage").val();
-    const yourNumber = numberReplacer(passage);
-    $("#your-number-phrase").html(yourNumber);
-  });
-});
