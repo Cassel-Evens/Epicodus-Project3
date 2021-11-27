@@ -31,3 +31,11 @@ Code: let robogersArrayMod = robogersArray.map(function(num) {
         return "\"Let's be neighbors!"
       }
 Expected Output: ["lets be neighbors!, ,]
+
+Test: Display numbers not being changed into a phrase;
+
+Code:  else {
+        return num;
+      }
+
+Expected Output: [0, beep,boop,3,4,5];

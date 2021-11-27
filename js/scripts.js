@@ -15,10 +15,16 @@ let robogers = function(number){
     let robogersArrayMod = robogersArray.map(function(num) {
       let digit = num.toString().split("");
       if (digit.includes("1")) {
-        return "\"Let's be neighbors!"
+        return "\"Let's be neighbors!";
+      } else if (digit.includes("2")) {
+        return "\"Boop";
+      } else if (digit.includes("3")) {
+        return "\"Beep";
+      } else {
+        return num;
       }
-      console.log(robogersArray);
     });
+    console.log(robogersArray);
     return robogersArrayMod.join(" ");
   };
 };
