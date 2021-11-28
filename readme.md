@@ -11,7 +11,6 @@ for (let i = 1; i <= number; i +=1) {
 } 
 
 Expected Output: (1,2)
-<<<<<<< HEAD
 
 Test: Push for index into an array.
 
@@ -20,8 +19,6 @@ Code: let robogersArray = [];
         robogersArray.push(i);
       }
     }
-
-<<<<<<< HEAD
 Expected Output: alert [1, 2 ,3 , 4]
 
 Test: If 1 is detected in the array replace and show "Let's be neighbors!"
@@ -38,10 +35,6 @@ Test: Display numbers not being changed into a phrase;
 Code:  else {
         return num;
       }
-
-Expected Output: [0, beep,boop,3,4,5];
-=======
-Expected Output: alert 1,2,3,4,5
+Expected Output: [0,beep, boop,3,4]
 
 * _https://cassel-evens.github.io/Epicodus-Project3/_ 
->>>>>>> 576a0a39fd1e190dc0a5e0db75e716e5eb5b8d94
