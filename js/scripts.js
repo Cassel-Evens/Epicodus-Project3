@@ -17,10 +17,6 @@ let robogers = function(number){
         return "\Beep";
       } else if (digit.includes("8")) {
         return "\Join the neighborhood";
-      } else if (digit.includes("9")) {
-        return "\Wow you know some high numbers!";
-      } else if (digit.includes("4")) {
-        return "\This is my fave number";
       } else {
         return num;
       }
@@ -30,20 +26,12 @@ let robogers = function(number){
 };
 
 //UI Logic
-$(document).ready(function() {
-  $("form#your-number").submit(function(event) {
+
+$(document).ready(function(){
+  $("form#your-number").submit(function(event)  {
     event.preventDefault();
-    let number = parseInt($("input#Number")).val();
-    let robogerOutput = robogers(number);
+    const number = parseInt($("input#Number").val());
+    const robogerOutput = robogers(number);
     $("#your-number-phrase").text(robogerOutput);
   });
 });
-// $(document).ready(function() {
-//   $("form#mr-robogers").submit(function(event) {
-//     event.preventDefault();
-//     var number = parseInt($("input#input").val());
-//     var robogerOutput = robogers(number);
-//     $("#output").text(robogerOutput);
-//     $("#robogers").fadeIn();
-//   });
-// });

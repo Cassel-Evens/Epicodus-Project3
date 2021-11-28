@@ -18,3 +18,16 @@ h2 {
 #roboger button {
   margin-top: 5px;
 }
+#results {
+  border: 2px solid black;
+  padding: 5px;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+}
+#results p {
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
